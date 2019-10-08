@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <title>Hello!</title>
+  <title>HW6!</title>
 </head>
 
 <body>
@@ -52,9 +52,12 @@
   <main role="main">
     <div class="container mt-5 pt-4 pt-lg-5">
       <div class="row">
-        <div class="col-sm-12 text-center text-info">
-          <h3>CHECKOUT</h3>
+        <div class="col-sm-12 mt-1">
+          <a class="btn btn-info btn-lg btn-block" href="checkout.html" role="button">CHECKOUT</a>
         </div>
+      </div>
+      <div class="row">
+        
 
         <div class="col-sm-12 text-left">
           <form class="needs-validation" novalidate>
@@ -69,7 +72,7 @@
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
 
-            
+
 
             <div class="form mt-5">
               <label for="exampleInputShippingAddress">Shipping Address</label>
@@ -184,7 +187,7 @@
                 <div class="col">
                   <!-- Button trigger modal -->
                   <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
-                      PAYMENT
+                    PAYMENT
                   </button>
                 </div>
               </div>
@@ -203,134 +206,137 @@
                         </div>
                         <div class="modal-body">
                           <div class="form ">
-                <div class="form-group row">
-                  <div class="col-md-12">
+                            <div class="form-group row">
+                              <div class="col-md-12">
 
-                    <div class="form-group row">
-                      <label for="validationCustom11" class="col-md-6 col-form-label">Name on credit card
-                      </label>
-                      <div class="col-md-6 ml-auto">
-                        <input type="text" class="form-control" id="validationCustom11" placeholder="Full Name"
-                          required>
-                        <div class="invalid-feedback">
-                          Please provide a valid Card Number.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-group row">
-                      <label for="validationCustom11" class="col-md-6 col-form-label">Credit card number
-                      </label>
-                      <div class="col-md-6 ml-auto">
-                        <input type="text" class="form-control" id="validationCustom11"
-                          placeholder="1111 1111 1111 1111" required>
-                        <div class="invalid-feedback">
-                          Please provide a valid Card Number.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="form-group row">
-                      <label for="validationCustom11" class="col-sm-4 col-lg-5 col-form-label">Expiration
-                      </label>
-                      <div class="col-sm-8 col-lg-7">
-                        <input type="text" class="form-control" id="validationCustom11" placeholder="mm/dd/yy" required>
-                        <div class="invalid-feedback">
-                          Please provide a valid Expiration date.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="form-group row">
-                      <label for="validationCustom11" class="col-sm-4 col-lg-5 col-form-label">CVV
-                      </label>
-                      <div class="col-sm-8 col-lg-7">
-                        <input type="text" class="form-control" id="validationCustom11" placeholder="111" required>
-                        <div class="invalid-feedback">
-                          Please provide a valid CVV Number.
+                                <div class="form-group row">
+                                  <label for="validationCustom11" class="col-md-6 col-form-label">Name on credit card
+                                  </label>
+                                  <div class="col-md-6 ml-auto">
+                                    <input type="text" class="form-control" id="validationCustom11"
+                                      placeholder="Full Name" required>
+                                    <div class="invalid-feedback">
+                                      Please provide a valid Card Number.
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-12">
+                                <div class="form-group row">
+                                  <label for="validationCustom11" class="col-md-6 col-form-label">Credit card number
+                                  </label>
+                                  <div class="col-md-6 ml-auto">
+                                    <input type="text" class="form-control" id="validationCustom11"
+                                      placeholder="1111 1111 1111 1111" required>
+                                    <div class="invalid-feedback">
+                                      Please provide a valid Card Number.
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-6">
+                                <div class="form-group row">
+                                  <label for="validationCustom11" class="col-sm-4 col-lg-5 col-form-label">Expiration
+                                  </label>
+                                  <div class="col-sm-8 col-lg-7">
+                                    <input type="text" class="form-control" id="validationCustom11"
+                                      placeholder="mm/dd/yy" required>
+                                    <div class="invalid-feedback">
+                                      Please provide a valid Expiration date.
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-6">
+                                <div class="form-group row">
+                                  <label for="validationCustom11" class="col-sm-4 col-lg-5 col-form-label">CVV
+                                  </label>
+                                  <div class="col-sm-8 col-lg-7">
+                                    <input type="text" class="form-control" id="validationCustom11" placeholder="111"
+                                      required>
+                                    <div class="invalid-feedback">
+                                      Please provide a valid CVV Number.
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success">Save changes</button>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+
+
+
+
+                <div class="mt-5">
+                  <label for="exampleInputPaymentMethod">PAYMENT METHOD</label>
+                </div>
+
+                <div class="form ">
+                  <div class="form-group row">
+                    <div class="col-lg-6">
+
+                      <div class="form-group row">
+                        <label for="validationCustom11" class="col-sm-4 col-lg-5 col-form-label">Name on credit card
+                        </label>
+                        <div class="col-sm-8 col-lg-7">
+                          <input type="text" class="form-control" id="validationCustom11" placeholder="Full Name"
+                            required>
+                          <div class="invalid-feedback">
+                            Please provide a valid Card Number.
+                          </div>
                         </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-success">Save changes</button>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group row">
+                        <label for="validationCustom11" class="col-sm-4 col-lg-5 col-form-label">Credit card number
+                        </label>
+                        <div class="col-sm-8 col-lg-7">
+                          <input type="text" class="form-control" id="validationCustom11"
+                            placeholder="1111 1111 1111 1111" required>
+                          <div class="invalid-feedback">
+                            Please provide a valid Card Number.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group row">
+                        <label for="validationCustom11" class="col-sm-4 col-lg-5 col-form-label">Expiration
+                        </label>
+                        <div class="col-sm-8 col-lg-7">
+                          <input type="text" class="form-control" id="validationCustom11" placeholder="mm/dd/yy"
+                            required>
+                          <div class="invalid-feedback">
+                            Please provide a valid Expiration date.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group row">
+                        <label for="validationCustom11" class="col-sm-4 col-lg-5 col-form-label">CVV
+                        </label>
+                        <div class="col-sm-8 col-lg-7">
+                          <input type="text" class="form-control" id="validationCustom11" placeholder="111" required>
+                          <div class="invalid-feedback">
+                            Please provide a valid CVV Number.
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-
-
-
-
-              <div class="mt-5">
-                <label for="exampleInputPaymentMethod">PAYMENT METHOD</label>
-              </div>
-
-              <div class="form ">
-                <div class="form-group row">
-                  <div class="col-lg-6">
-
-                    <div class="form-group row">
-                      <label for="validationCustom11" class="col-sm-4 col-lg-5 col-form-label">Name on credit card
-                      </label>
-                      <div class="col-sm-8 col-lg-7">
-                        <input type="text" class="form-control" id="validationCustom11" placeholder="Full Name"
-                          required>
-                        <div class="invalid-feedback">
-                          Please provide a valid Card Number.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="form-group row">
-                      <label for="validationCustom11" class="col-sm-4 col-lg-5 col-form-label">Credit card number
-                      </label>
-                      <div class="col-sm-8 col-lg-7">
-                        <input type="text" class="form-control" id="validationCustom11"
-                          placeholder="1111 1111 1111 1111" required>
-                        <div class="invalid-feedback">
-                          Please provide a valid Card Number.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="form-group row">
-                      <label for="validationCustom11" class="col-sm-4 col-lg-5 col-form-label">Expiration
-                      </label>
-                      <div class="col-sm-8 col-lg-7">
-                        <input type="text" class="form-control" id="validationCustom11" placeholder="mm/dd/yy" required>
-                        <div class="invalid-feedback">
-                          Please provide a valid Expiration date.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="form-group row">
-                      <label for="validationCustom11" class="col-sm-4 col-lg-5 col-form-label">CVV
-                      </label>
-                      <div class="col-sm-8 col-lg-7">
-                        <input type="text" class="form-control" id="validationCustom11" placeholder="111" required>
-                        <div class="invalid-feedback">
-                          Please provide a valid CVV Number.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button class="btn btn-info btn-lg btn-block" type="submit">Submit form</button>
+              <button class="btn btn-info btn-lg btn-block" type="submit">Submit form</button>
           </form>
         </div>
       </div>
@@ -339,42 +345,7 @@
 
 
 
-  <script>
-    function myFunction() {
-      // Get the checkbox
-      var checkBox = document.getElementById("myCheck");
-      // Get the output text
-      var text = document.getElementById("text");
-
-      // If the checkbox is checked, display the output text
-      if (checkBox.checked == true) {
-        text.style.display = "block";
-      } else {
-        text.style.display = "none";
-      }
-    }
-  </script>
-
-  <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function () {
-      'use strict';
-      window.addEventListener('load', function () {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function (form) {
-          form.addEventListener('submit', function (event) {
-            if (form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-          }, false);
-        });
-      }, false);
-    })();
-  </script>
+  
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -387,6 +358,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
+  <script src="main.js"></script>
 </body>
 
 </html>
