@@ -32,14 +32,19 @@ function myFunction() {
   }, false);
 })();
 
+
+
+
+
 $(document).ready(function(){
   $("#checkoutBotton").click(function(){
     $("#checkoutForm").toggle();
   });
-  $("#show").click(function(){
-    $("p").show();
-  });
+
 });
+
+
+
 
 
 
