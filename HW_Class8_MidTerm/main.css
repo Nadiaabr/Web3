@@ -51,10 +51,16 @@ p {
   line-height: 3rem;
 }
 
+.p1 {
+  font-family: 'Barlow', serif;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+}
+
 a {
   font-family: 'Barlow', serif;
   font-size: 1.3rem;
-  line-height: 2rem;
+  line-height: 2.5rem;
   
 }
 
