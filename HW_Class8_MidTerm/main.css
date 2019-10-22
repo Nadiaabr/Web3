@@ -1,19 +1,28 @@
-.line-hight-carusel-mob {
+.line-hight-carusel-xsm {
   line-height: 50px;
 }
 
-.line-hight-carusel-scr {
-  
-  
+.line-hight-carusel-sm {
+  line-height: 40px; 
+}
+
+.carousel-caption {
+  padding-bottom: ;
 }
 
 
 .navbar {
   background-color: #ffcb0b;
-  
 }
 
 h1 {
+  color: #8d0000;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-shadow: 0.5px 0.5px #7e7e7e;
+  
+}
+
+h2 {
   color: #8d0000;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-shadow: 0.5px 0.5px #7e7e7e;
