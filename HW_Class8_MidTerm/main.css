@@ -1,0 +1,27 @@
+.carousel-caption {
+  
+}
+
+.line-hight-h1 {
+  line-height: 50px;
+}
+
+
+
+
+.navbar {
+  background-color: #ffcb0b;
+  
+}
+
+h1 {
+  
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-shadow: 0.5px 1px #979797;
+  
+}
+
+
+.btn {
+  border: 2px solid;
+}
