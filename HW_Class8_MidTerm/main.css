@@ -1,12 +1,11 @@
-.carousel-caption {
-  
-}
-
-.line-hight-h1 {
+.line-hight-carusel-mob {
   line-height: 50px;
 }
 
-
+.line-hight-carusel-scr {
+  
+  
+}
 
 
 .navbar {
@@ -15,13 +14,19 @@
 }
 
 h1 {
-  
+  color: #8d0000;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  text-shadow: 0.5px 1px #979797;
+  text-shadow: 0.5px 0.5px #7e7e7e;
   
 }
 
 
 .btn {
   border: 2px solid;
+}
+
+.btnRed {
+  color: #8d0000;
+  
+  
 }
