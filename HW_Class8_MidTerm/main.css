@@ -11,11 +11,9 @@
 }
 
 
-.navbar {
-  background-color: #ffcb0b;
-}
 
-h1 {
+
+h1 .carusel {
   text-shadow: 0.5px 0.5px #7e7e7e;
   font-family: 'Orienta', serif;
   letter-spacing: 2px;
@@ -34,9 +32,30 @@ h3 {
   line-height: 50px;
 }
 
+h5 {
+  text-shadow: 0.5px 0.5px #7e7e7e;
+  font-family: 'Orienta', serif;
+  letter-spacing: 2px;
+  font-size: 4rem;
+  color: #ffcb0b;
+  
+}
+
+h6 {
+  font-size: 1.4rem;
+}
+
 p {
   font-family: 'Barlow', serif;
   font-size: 1.8rem;
+  line-height: 3rem;
+}
+
+a {
+  font-family: 'Barlow', serif;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  
 }
 
 .btn {
