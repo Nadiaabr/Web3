@@ -1,0 +1,13 @@
+@font-face {
+  font-family: Kaleidoscope;
+  src: url(typography/Kaleidoscope.otf);
+  
+}
+
+#logoType {
+  font-family: Kaleidoscope;
+}
+
+.navbar-brand {
+  font-size: 2.25rem;
+}
