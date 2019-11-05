@@ -9,12 +9,17 @@
 
 }
 
+.KaleidoscopeType {
+  font-family: Kaleidoscope;
+
+}
+
 .navbar-brand {
   font-size: 2.25rem;
 
 }
 
-/***** animation *****/
+/***** animation1 carusel-bakgrount *****/
 
  @keyframes grayscale-to-color {
    from {filter: grayscale(100%);}
@@ -26,6 +31,175 @@
   animation-name: grayscale-to-color;
   animation-duration: 4s;
 }
+
+/***** animation2 carusel-Tittle*****/
+
+.tittleCarusel2 {
+  margin-top: -75px;
+  position: absolute;
+  font-size: 4rem;
+  color: rgb(1, 15, 41);
+  right: 0;
+  animation-iteration-count: 1;
+  animation: mymove 5s;
+  margin-left: -20px;
+  text-align: right;
+  animation-fill-mode: forwards;
+  
+}
+
+@keyframes k {
+  0% {display:none ; opacity: 0;}
+  1% {display: block ; opacity: 0;}
+  100% {display: block ; opacity: 1;}
+  100% {right: 495px;}
+}
+
+.k {
+  animation-name: k;
+  animation-duration: 2s;
+  
+ }
+
+@keyframes a {
+  0% {display:none ; opacity: 0;}
+  1% {display: block ; opacity: 0;}
+  100% {display: block ; opacity: 1;}
+  100% {right: 452px;}
+}
+
+.a {
+  animation-name: a;
+  animation-duration: 2s;
+ }
+
+@keyframes l {
+  0% {display:none ; opacity: 0;}
+  1% {display: block ; opacity: 0;}
+  100% {display: block ; opacity: 1;}
+  100% {right: 412px;}
+}
+
+.l {
+  animation-name: l;
+  animation-duration: 2s;
+ }
+
+ @keyframes e {
+  0% {display:none ; opacity: 0;}
+  1% {display: block ; opacity: 0;}
+  100% {display: block ; opacity: 1;}
+  100% {right: 371px;}
+}
+
+.e {
+  animation-name: e;
+  animation-duration: 2s;
+ }
+
+ @keyframes i {
+  0% {display:none ; opacity: 0;}
+  1% {display: block ; opacity: 0;}
+  100% {display: block ; opacity: 1;}
+  100% {right: 337px;}
+}
+
+.i {
+  animation-name: i;
+  animation-duration: 2s;
+ }
+
+ @keyframes d {
+  0% {display:none ; opacity: 0;}
+  1% {display: block ; opacity: 0;}
+  100% {display: block ; opacity: 1;}
+  100% {right: 283px;}
+}
+
+.d {
+  animation-name: d;
+  animation-duration: 2s;
+ }
+
+ @keyframes o {
+  0% {display:none ; opacity: 0;}
+  1% {display: block ; opacity: 0;}
+  100% {display: block ; opacity: 1;}
+  100% {right: 228px;}
+}
+
+.o {
+  animation-name: o;
+  animation-duration: 2s;
+ }
+
+ @keyframes s {
+  0% {display:none ; opacity: 0;}
+  1% {display: block ; opacity: 0;}
+  100% {display: block ; opacity: 1;}
+  100% {right: 190px;}
+}
+
+.s {
+  animation-name: s;
+  animation-duration: 2s;
+ }
+
+ @keyframes c {
+  0% {display:none ; opacity: 0;}
+  1% {display: block ; opacity: 0;}
+  100% {display: block ; opacity: 1;}
+  100% {right: 140px;}
+}
+
+.c {
+  animation-name: c;
+  animation-duration: 2s;
+ }
+
+ @keyframes oo {
+  0% {display:none ; opacity: 0;}
+  1% {display: block ; opacity: 0;}
+  100% {display: block ; opacity: 1;}
+  100% {right: 84px;}
+}
+
+.oo {
+  animation-name: oo;
+  animation-duration: 2s;
+ }
+
+ @keyframes p {
+  0% {display:none ; opacity: 0;}
+  1% {display: block ; opacity: 0;}
+  100% {display: block ; opacity: 1;}
+  100% {right: 45px;}
+}
+
+.p {
+  animation-name: p;
+  animation-duration: 2s;
+ }
+
+ @keyframes alphabet {
+  0% {display:none ; opacity: 0;}
+  1% {display: block ; opacity: 0;}
+  100% {display: block ; opacity: 1;}
+  100% {right: 45px;}
+}
+
+@keyframes alphabet {
+  0% {display:none ; opacity: 0;}
+  1% {display: block ; opacity: 0;}
+  100% {display: block ; opacity: 1;}
+  
+}
+ .alphabet {
+   color: white;
+   animation-name: alphabet;
+   animation-duration: 10s;
+ }
+
 
 
 /***** CSS GRID *****/

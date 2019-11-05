@@ -7,3 +7,4 @@ $('.carousel').on('slide.bs.carousel', function onSlide (ev) {
   img.classList.remove("grayscale-to-color");
   img.classList.add("grayscale-to-color");
 })
+
