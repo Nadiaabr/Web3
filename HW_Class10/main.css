@@ -204,71 +204,72 @@
 
 /***** CSS GRID *****/
 
-* {
-  box-sizing: border-box;
+.item {
+  width: 100%;
+  grid-gap: 10px;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Style the header */
-.header {
-  grid-area: header;
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-}
-
-/* The grid container */
 .grid-container {
+  /*display: grid;
+  grid-gap: 10px;
+  padding: 10px;*/
   display: grid;
+  grid-template-columns: 150px 150px 450px;
+  grid-template-rows: 300px 150px;
   grid-template-areas: 
-    'header header header header header header' 
-    'left middle middle middle middle right' 
-    'footer footer footer footer footer footer';
-  /* grid-column-gap: 10px; - if you want gap between the columns */
-} 
-
-.left,
-.middle,
-.right {
+    "top-left    top-left   right"
+    "bottom-left bottom-mid right";
+  grid-gap: 10px;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  background-color: rgb(255, 255, 255);
 }
 
-/* Style the left column */
-.left {
-  grid-area: left;
+.grid-item1 {
+  background-color: rgb(255, 0, 0);
+  grid-area: top-left;
 }
 
-/* Style the middle column */
-.middle {
-  grid-area: middle;
+@keyframes example2 {
+  from {background-color: rgb(255, 0, 0);}
+  to {margin-top: -10px;}
+  to {margin-left: -10px;}
+  to {margin-right: -10px;}
+  to {margin-bottom: -10px;}
+  to {background-color: rgb(125, 0, 0);}
 }
 
-/* Style the right column */
-.right {
+.grid-item1:hover {
+  background-color: rgb(125, 0, 0);
+  animation: example2;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.grid-item2 {
+  background-color: rgb(0, 255, 0);
   grid-area: right;
 }
 
-/* Style the footer */
-.footer {
-  grid-area: footer;
-  background-color: #f1f1f1;
-  padding: 10px;
-  text-align: center;
+.grid-item3 {
+  background-color: rgb(0, 0, 255);
+  grid-area: bottom-left;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+.grid-item4 {
+  background-color: rgb(0, 255, 255);
+  grid-area: bottom-mid;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other *
 @media (max-width: 600px) {
   .grid-container  {
     grid-template-areas: 
-      'header header header header header header' 
+      
       'left left left left left left' 
       'middle middle middle middle middle middle' 
       'right right right right right right' 
       'footer footer footer footer footer footer';
   }
 }
+*/
+
