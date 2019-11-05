@@ -1,52 +1,100 @@
 @font-face {
   font-family: Kaleidoscope;
   src: url(typography/Kaleidoscope.otf);
-  
+
 }
 
 #logoType {
   font-family: Kaleidoscope;
+
 }
 
 .navbar-brand {
   font-size: 2.25rem;
+
 }
 
+/***** animation *****/
+
+ @keyframes grayscale-to-color {
+   from {filter: grayscale(100%);}
+   to {filter: grayscale(0%);}
+
+}
+ 
+ .grayscale-to-color {
+  animation-name: grayscale-to-color;
+  animation-duration: 4s;
+}
 
 
 /***** CSS GRID *****/
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* The grid container */
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  grid-gap: 10px;
-  background-color: #2196F3;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left middle middle middle middle right' 
+    'footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+} 
+
+.left,
+.middle,
+.right {
   padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
 }
 
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+/* Style the left column */
+.left {
+  grid-area: left;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: #f1f1f1;
+  padding: 10px;
   text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
 }
 
-.item1 {
-  grid-area: 1 / 1 / span 3 / span 1;
-}
-
-.item2 {
-  grid-area: 1 / 4 / span 3 / span 3;
-}
-
-.item9 {
-  grid-area: 4 / 2 / span 4 / span 5;
-}
-
-.item1 {
-  grid-area: ;
-}
-
-.item8 {
-  grid-area: ;
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+      'footer footer footer footer footer footer';
+  }
 }
