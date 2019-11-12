@@ -1,41 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Canvas and SVG</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Canvas and SVG</title>
 </head>
+<style>
+    #scream {
+      visibility: hidden;
+    }
+    </style>
 <body>
 
-    <svg width="300" height="300">
-        <circle cx="150" cy="150" r="100" stroke="red" stroke-width="3" fill="darkblue">
-            
-        </circle>
-        <rect x="125" y="125" width="50" height="50" style="fill:aliceblue; stroke-width: 3px; stroke: darkcyan;"></rect>
-    </svg>
+    <img id="scream" width="220" height="277" class="d-none" class="scream"
+    src="http://wallperio.com/data/out/331/picture-of-birds_614576553.jpg" alt="The Scream">
+
+  <canvas id="myCanvas" width="500" height="500" style="border:1px solid #000000;">
+
+  </canvas>
 
 
-    <canvas width="600" height="700" id="myCanvas">
-        This webpage uses HTML canvas - please load in a newer broswer.
-    </canvas>
+  <script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = "#fcc062";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    <script>
-        const canvas = document.getElementById("myCanvas");
-        const ctx = canvas.getContext('2d');
-        ctx.fillStyle = "#959595";
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-        
-        ctx.strokeStyle = "#000000";
-        ctx.fillStyle = "#FF00FF";
-        ctx.fillRect(100, 100, 200, 100);
-        
-        
-        ctx.fillStyle = "#0000FF";
-        ctx.strokeRect(200, 150, 200, 100);
-        ctx.fillStyle = "#959595";
-        ctx.fillRect(150, 175, 75, 75);
-    </script>
-    
+    ctx.fillStyle = "#62bbd3";
+    ctx.fillRect(0, 0, 400, 400);
+
+    ctx.fillStyle = "#054353";
+    ctx.font = "40px Arial";
+    ctx.fillText("Hello", 150, 60);
+
+
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+
+    ctx.fillStyle = "#fcc062";
+    ctx.fillRect(0, 0, 100, 100);
+
+    ctx.fillStyle = "#fcc062";
+    ctx.fillRect(100, 100, 300, 100);
+
+    window.onload = function() {
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    var img = document.getElementById("scream");
+   ctx.drawImage(img, 100, 100);
+};
+
+
+
+  </script>
+  <script>
+
+  </script>
 </body>
+
 </html>
