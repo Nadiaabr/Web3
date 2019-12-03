@@ -16,10 +16,20 @@
 h1 {
   color: #e8d8b7;
   font-family: PlayRegular;
+  letter-spacing: 5px;
 }
 
 h2 {
   line-height: 45px;
+}
+
+h4 {
+  font-family: PlayRegular;
+} 
+
+h5 {
+  color: #e8d8b7;
+  font-family: PlayRegular;
 }
 
 p {
@@ -204,3 +214,17 @@ p {
 }
 
 /* Home content style end */
+
+
+.containerFooter {
+  background-color: black;
+}
+
+.BackToTop a {
+  color: #898e00;
+  font-size: 20px;
+}
+
+.text-muted {
+  color: rgb(209, 208, 208)!Important;
+}
