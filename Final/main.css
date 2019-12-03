@@ -9,12 +9,12 @@
 }
 
 .container-fluid {
-  height: 1500px;
+  
   background-color: black;
 }
 
 h1 {
-  color: whitesmoke;
+  color: #e8d8b7;
   font-family: PlayRegular;
 }
 
@@ -38,7 +38,7 @@ p {
 }
 
 .logoHeader {
-  background-color: whitesmoke;
+  background-color: #898e00;
 }
 
 /* Navbar style end */
@@ -63,7 +63,7 @@ p {
   }
   
 .animated-icon span {
-  background: #ba8d2d;
+  background: #e8d8b7;
   display: block;
   position: absolute;
   height: 3px;
@@ -159,6 +159,14 @@ p {
 
 .siluet {
   background-color: #6d6e71;
+}
+.BeHealthy {
+  background-color: #898e00;
+}
+
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 @media (max-width: 767px){
