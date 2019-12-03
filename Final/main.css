@@ -1,13 +1,23 @@
 @font-face {
-  font-family: Kaleidoscope;
-  src: url(typography/Kaleidoscope.otf);
-  
+  font-family: PlayBold;
+  src: url(typography/PlayBold.ttf);
+}
+
+@font-face {
+  font-family: PlayRegular;
+  src: url(typography/PlayRegular.ttf);
 }
 
 .container-fluid {
   height: 1500px;
-  background-color: blue;
+  background-color: black;
 }
+
+h1 {
+  color: whitesmoke;
+  font-family: PlayRegular;
+}
+
 
 /* Navbar style start */
 
@@ -45,7 +55,7 @@
   }
   
 .animated-icon span {
-  background: #3187c4;
+  background: #ba8d2d;
   display: block;
   position: absolute;
   height: 3px;
@@ -63,39 +73,39 @@
   transition: .25s ease-in-out;
   }
   
-  .animated-icon span:nth-child(1) {
+.animated-icon span:nth-child(1) {
   top: 0px;
   }
   
-  .animated-icon span:nth-child(2), .animated-icon span:nth-child(3) {
+.animated-icon span:nth-child(2), .animated-icon span:nth-child(3) {
   top: 10px;
   }
   
-  .animated-icon span:nth-child(4) {
+.animated-icon span:nth-child(4) {
   top: 20px;
   }
   
-  .animated-icon.open span:nth-child(1) {
+.animated-icon.open span:nth-child(1) {
   top: 11px;
   width: 0%;
   left: 50%;
   }
   
-  .animated-icon.open span:nth-child(2) {
+.animated-icon.open span:nth-child(2) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
   }
   
-  .animated-icon.open span:nth-child(3) {
+.animated-icon.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
   }
   
-  .animated-icon.open span:nth-child(4) {
+.animated-icon.open span:nth-child(4) {
   top: 11px;
   width: 0%;
   left: 50%;
@@ -106,7 +116,37 @@
   
   
   
+  /* Carusel style start */
+
+.carouselControl{
+  color: black;
+  font-size: 3rem;
+}
+.carousel-indicators li {
+  background-color: black;
+  height: .7rem;
+  width: .7rem;
+  border: 1px solid black;
+  padding: 3px;
+  border-radius: 25px;
+}
   
-  
+/* Carusel style end */
 
 
+
+
+/* Carusel animation start */
+
+/* Carusel animation end */
+
+
+
+
+.siluet2 {
+  background-color: #e8d8b7;
+}
+
+.siluet {
+  background-color: #6d6e71;
+}
