@@ -18,6 +18,14 @@ h1 {
   font-family: PlayRegular;
 }
 
+h2 {
+  line-height: 45px;
+}
+
+p {
+  line-height: 35px;
+}
+
 
 /* Navbar style start */
 
@@ -143,6 +151,8 @@ h1 {
 
 
 
+/* Home content style start */
+
 .siluet2 {
   background-color: #e8d8b7;
 }
@@ -150,3 +160,39 @@ h1 {
 .siluet {
   background-color: #6d6e71;
 }
+
+@media (max-width: 767px){
+  .silueImg {
+    padding-bottom: 75px;
+  }
+
+  .silueTittle {
+    padding-top: 35px;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 767px){
+  .cardTextHome {
+    margin: 30px;
+  }
+}
+
+@media (min-width: 768px){
+  .healthContent {
+    height: 400px;
+  }
+  .silueTittle {
+    padding-right: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media (min-width: 992px){
+
+  p {
+    line-height: 26px;
+    font-size: 14px;
+  }
+}
+
+/* Home content style end */
