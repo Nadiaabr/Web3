@@ -8,35 +8,6 @@
   src: url(typography/PlayRegular.ttf);
 }
 
-.container-fluid {
-  
-  background-color: black;
-}
-
-h1 {
-  color: #e8d8b7;
-  font-family: PlayRegular;
-  letter-spacing: 5px;
-}
-
-h2 {
-  line-height: 45px;
-}
-
-h4 {
-  font-family: PlayRegular;
-} 
-
-h5 {
-  color: #e8d8b7;
-  font-family: PlayRegular;
-}
-
-p {
-  line-height: 35px;
-}
-
-
 /* Navbar style start */
 
 #logoType {
@@ -49,6 +20,11 @@ p {
 
 .logoHeader {
   background-color: #898e00;
+}
+
+.container-fluid {
+  height: 1000px;
+  background-color: blue;
 }
 
 /* Navbar style end */
@@ -130,101 +106,49 @@ p {
   }
 
   /* Toggler button animation end */
+
+
+
+ 
+  /* Navbar animation start */
+
+  #myDIVright {
+    position: relative;
+    right: 0px;
+    animation-iteration-count: 1;
+    animation: mymove 5s;
+    
+  }
   
-  
-  
-  
-  /* Carusel style start */
-
-.carouselControl{
-  color: black;
-  font-size: 3rem;
-}
-.carousel-indicators li {
-  background-color: black;
-  height: .7rem;
-  width: .7rem;
-  border: 1px solid black;
-  padding: 3px;
-  border-radius: 25px;
-}
-
-  
-/* Carusel style end */
-
-
-
-
-/* Carusel animation start */
-
-/* Carusel animation end */
-
-
-
-
-/* Home content style start */
-
-.siluet2 {
-  background-color: #e8d8b7;
-}
-
-.siluet {
-  background-color: #6d6e71;
-}
-.BeHealthy {
-  background-color: #898e00;
-}
-
-.container-fluid {
-  
-}
-
-@media (max-width: 767px){
-  .silueImg {
-    padding-bottom: 75px;
+  @keyframes mymove {
+    100% {right: 80px;}
   }
 
-  .silueTittle {
-    padding-top: 35px;
+
+  #myDIVrightleft {
+    position: relative;
+    left: 0px;
+    animation-iteration-count: 1;
+    animation: my 5s;
+    
   }
-}
+  
 
-@media (min-width: 540px) and (max-width: 767px){
-  .cardTextHome {
-    margin: 30px;
+  @keyframes my {
+    100% {left: 80px;}
   }
-}
 
-@media (min-width: 768px){
-  .healthContent {
-    height: 400px;
+
+  #myDIVtop {
+    position: ;
+    top: 0px;
+    animation-iteration-count: 1;
+    animation: mytop 5s;
+    
   }
-  .silueTittle {
-    padding-right: 0px;
-    margin-right: 0px;
+  
+
+  @keyframes mytop {
+    100% {top: 50px;}
   }
-}
 
-@media (min-width: 992px){
-
-  p {
-    line-height: 26px;
-    font-size: 14px;
-  }
-}
-
-/* Home content style end */
-
-
-.containerFooter {
-  background-color: black;
-}
-
-.BackToTop a {
-  color: #898e00;
-  font-size: 20px;
-}
-
-.text-muted {
-  color: rgb(209, 208, 208)!Important;
-}
