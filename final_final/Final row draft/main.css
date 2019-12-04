@@ -1,0 +1,230 @@
+@font-face {
+  font-family: PlayBold;
+  src: url(typography/PlayBold.ttf);
+}
+
+@font-face {
+  font-family: PlayRegular;
+  src: url(typography/PlayRegular.ttf);
+}
+
+.container-fluid {
+  
+  background-color: black;
+}
+
+h1 {
+  color: #e8d8b7;
+  font-family: PlayRegular;
+  letter-spacing: 5px;
+}
+
+h2 {
+  line-height: 45px;
+}
+
+h4 {
+  font-family: PlayRegular;
+} 
+
+h5 {
+  color: #e8d8b7;
+  font-family: PlayRegular;
+}
+
+p {
+  line-height: 35px;
+}
+
+
+/* Navbar style start */
+
+#logoType {
+  width: 20%;
+}
+
+.navbarBakcground {
+  background-color: black;
+}
+
+.logoHeader {
+  background-color: #898e00;
+}
+
+/* Navbar style end */
+
+
+/* Toggler button animation start */
+
+.animated-icon {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  }
+  
+.animated-icon span {
+  background: #e8d8b7;
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+  }
+  
+.animated-icon span:nth-child(1) {
+  top: 0px;
+  }
+  
+.animated-icon span:nth-child(2), .animated-icon span:nth-child(3) {
+  top: 10px;
+  }
+  
+.animated-icon span:nth-child(4) {
+  top: 20px;
+  }
+  
+.animated-icon.open span:nth-child(1) {
+  top: 11px;
+  width: 0%;
+  left: 50%;
+  }
+  
+.animated-icon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  }
+  
+.animated-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  }
+  
+.animated-icon.open span:nth-child(4) {
+  top: 11px;
+  width: 0%;
+  left: 50%;
+  }
+
+  /* Toggler button animation end */
+  
+  
+  
+  
+  /* Carusel style start */
+
+.carouselControl{
+  color: black;
+  font-size: 3rem;
+}
+.carousel-indicators li {
+  background-color: black;
+  height: .7rem;
+  width: .7rem;
+  border: 1px solid black;
+  padding: 3px;
+  border-radius: 25px;
+}
+
+  
+/* Carusel style end */
+
+
+
+
+/* Carusel animation start */
+
+/* Carusel animation end */
+
+
+
+
+/* Home content style start */
+
+.siluet2 {
+  background-color: #e8d8b7;
+}
+
+.siluet {
+  background-color: #6d6e71;
+}
+.BeHealthy {
+  background-color: #898e00;
+}
+
+.container-fluid {
+  
+}
+
+@media (max-width: 767px){
+  .silueImg {
+    padding-bottom: 75px;
+  }
+
+  .silueTittle {
+    padding-top: 35px;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 767px){
+  .cardTextHome {
+    margin: 30px;
+  }
+}
+
+@media (min-width: 768px){
+  .healthContent {
+    height: 400px;
+  }
+  .silueTittle {
+    padding-right: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media (min-width: 992px){
+
+  p {
+    line-height: 26px;
+    font-size: 14px;
+  }
+}
+
+/* Home content style end */
+
+
+.containerFooter {
+  background-color: black;
+}
+
+.BackToTop a {
+  color: #898e00;
+  font-size: 20px;
+}
+
+.text-muted {
+  color: rgb(209, 208, 208)!Important;
+}
