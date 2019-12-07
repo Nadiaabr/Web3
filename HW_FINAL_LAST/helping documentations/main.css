@@ -10,6 +10,10 @@
 
 /* Navbar style start */
 
+div {
+  margin: 0;
+}
+
 #logoType {
   width: 20%;
 }
@@ -22,9 +26,13 @@
   background-color: #898e00;
 }
 
-.container-fluid {
-  height: 1000px;
+.mainContaioner {
+  height: 2000px;
   background-color: blue;
+}
+
+.test {
+  background-color: red;
 }
 
 /* Navbar style end */
@@ -112,43 +120,37 @@
  
   /* Navbar animation start */
 
-  #myDIVright {
+  #myDIVLeft {
     position: relative;
-    right: 0px;
     animation-iteration-count: 1;
-    animation: mymove 5s;
-    
+    /*animation: moveDIVLeft 5s;*/
+    /*margin-right: -90px;*/
   }
   
-  @keyframes mymove {
-    100% {right: 80px;}
+  /*@keyframes moveDIVLeft {
+    100% {margin-right: 0;}
+  }*/
+
+  #myDIVTop {
+    /*margin-bottom: 60px;*/
+    animation-iteration-count: 1;
+    /*animation: moveDIVTop 5s;*/
+    z-index: 1;
   }
 
+  /*@keyframes moveDIVTop {
+    100% {margin-bottom: 0;}
+  }*/
 
-  #myDIVrightleft {
+  #myDIVRight {
     position: relative;
     left: 0px;
-    animation-iteration-count: 1;
-    animation: my 5s;
-    
-  }
-  
-
-  @keyframes my {
-    100% {left: 80px;}
+    animation-iteration-count: 1; 
+    /*animation: moveDIVRight 5s;*/
+    /*margin-left: -90px;*/
   }
 
-
-  #myDIVtop {
-    position: ;
-    top: 0px;
-    animation-iteration-count: 1;
-    animation: mytop 5s;
-    
-  }
-  
-
-  @keyframes mytop {
-    100% {top: 50px;}
-  }
+  /*@keyframes moveDIVRight {
+    100% {margin-left: 0;}
+  }*/
 
