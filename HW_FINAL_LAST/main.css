@@ -37,29 +37,92 @@ h1 {
   padding: 2px;
   border-radius: 25px;
 }
+
 /* Carusel style end */
 
 
 
-/* Home content style start */
+/* CarouselBestseller style start */
 
-@media (max-width: 767px){
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+  transform: translateX(50%);
+}
+
+.carousel-inner .carousel-item-left.active, 
+.carousel-inner .carousel-item-prev {
+  transform: translateX(-50%);
+}
+  
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
   
 }
+
+#carouselControBestseller {
+  color: black;
+}
+
 
 @media (min-width: 540px) and (max-width: 767px){
   
 }
 
 @media (min-width: 768px){
+  .carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+  transform: translateX(33%);
+}
+
+.carousel-inner .carousel-item-left.active, 
+.carousel-inner .carousel-item-prev {
+  transform: translateX(-33%);
+}
   
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+  
+}
 }
 
 @media (min-width: 992px){
-
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    display: flex;
+  }
+  
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(16%);
+  }
+  
+  .carousel-inner .carousel-item-left.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-16%);
+  }
+    
+  .carousel-inner .carousel-item-right,
+  .carousel-inner .carousel-item-left{ 
+    transform: translateX(0);
+    
+  }
 }
-
-/* Home content style end */
+/* CarouselBestseller style end */
 
 /* Home style end */
 
@@ -84,3 +147,29 @@ h1 {
 
 /* Footer style ended */
 
+
+
+
+
+
+
+
+
+  
+}
+
+@media (max-width: 767px){
+  
+}
+
+@media (min-width: 540px) and (max-width: 767px){
+  
+}
+
+@media (min-width: 768px){
+  
+}
+
+@media (min-width: 992px){
+
+}

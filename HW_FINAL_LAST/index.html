@@ -28,7 +28,7 @@
 <body>
 
   <!-- Navbar start-->
-  <header id="mainHeader" class="container-fluid blog-herader fixed-top d-none d-md-block">
+  <header id="mainHeader" class="container-fluid blog-herader fixed-top d-none d-md-block header-shadow">
     <nav class="row navbar navbar-expand-md navbar-dark navbarBakcground">
       <div class="col-12 test d-flex flex-row justify-content-center navbar-nav">
         <div class="row">
@@ -41,9 +41,7 @@
             </li>
           </div>
           <div class="" id="myDIVTop">
-            <div class="">
-              <img class="grayscale-to-color" src="img/logo.png" alt="" width="150">
-            </div>
+            <img class="grayscale-to-color" src="img/logo.png" alt="" width="150">
           </div>
           <div class="col d-flex align-self-end" id="myDIVRight">
             <li class="nav-item">
@@ -140,10 +138,61 @@
         </div>
       </div>
 
-      <div class="row">
+      <!-- Bestseller carousel start-->
+      <div class="container-fluid text-center bestsellerContainer">
+        <div class="row my-5">
+          <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+            <div class="carousel-inner w-100" role="listbox" id="carouselBestseller">
+              <div class="carousel-item my-carousel-item active">
+                <img class="d-block col-6 col-md-4 col-lg-2 img-fluid" src="img/bestseller1.jpg">
+              </div>
+              <div class="carousel-item my-carousel-item">
+                <img class="d-block col-6 col-md-4 col-lg-2 img-fluid" src="img/bestseller1.jpg">
+              </div>
+              <div class="carousel-item my-carousel-item">
+                <img class="d-block col-6 col-md-4 col-lg-2 img-fluid" src="img/bestseller1.jpg">
+              </div>
+              <div class="carousel-item my-carousel-item">
+                <img class="d-block col-6 col-md-4 col-lg-2 img-fluid" src="img/bestseller1.jpg">
+              </div>
+              <div class="carousel-item my-carousel-item">
+                <img class="d-block col-6 col-md-4 col-lg-2 img-fluid" src="img/bestseller1.jpg">
+              </div>
+              <div class="carousel-item my-carousel-item">
+                <img class="d-block col-6 col-md-4 col-lg-2 img-fluid" src="img/bestseller1.jpg">
+              </div>
+            </div>
+            <div class="">
+              <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <i class="fas fa-chevron-left carouselControl"></i>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <i class="fas fa-chevron-right carouselControl"></i>
+              </a>
+              <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+                <span aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+                <span aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Bestseller carousel end-->
 
+
+
+
+
+
+
+
+
+      <div class="row">
         <div class="col col-sm-6 col-lg-3 card rounded-0 border-0" style="width: 18rem;">
-          <img src="img/bestseller1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">AirRise™ Pro Standing Desk Converter</h5>
           </div>
@@ -156,7 +205,6 @@
             <a href="#" class="card-link">Another link</a>
           </div>
         </div>
-
       </div>
 
 
