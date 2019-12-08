@@ -9,12 +9,17 @@
 }
 
 h1 {
-  color: #e8d8b7;
+  color: #1d1d1d;
   font-family: PlayRegular;
   letter-spacing: 5px;
 }
 
+/* Home style start */
 
+.Hometittle1 {
+  background-color: #e8d8b7;
+  height: 250px;
+}
 
 
 /* Carusel style start */
@@ -38,7 +43,6 @@ h1 {
 
 /* Home content style start */
 
-
 @media (max-width: 767px){
   
 }
@@ -56,6 +60,9 @@ h1 {
 }
 
 /* Home content style end */
+
+/* Home style end */
+
 
 
 
@@ -76,3 +83,4 @@ h1 {
 }
 
 /* Footer style ended */
+
