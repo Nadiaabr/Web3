@@ -18,9 +18,15 @@ h1 {
 
 .Hometittle1 {
   background-color: #e8d8b7;
-  height: 250px;
+  height: 100px;
+  padding-top: 15px;
 }
 
+.Hometittle2 {
+  background-color: #6d6e71;
+  height: 100px;
+  padding-top: 15px;
+}
 
 /* Carusel style start */
 
@@ -68,11 +74,6 @@ h1 {
 
 #carouselControBestseller {
   color: black;
-}
-
-
-@media (min-width: 540px) and (max-width: 767px){
-  
 }
 
 @media (min-width: 768px){
@@ -123,6 +124,44 @@ h1 {
   }
 }
 /* CarouselBestseller style end */
+
+
+
+/* FEATURED PRODUCTS start */
+.bgFeatured {
+  background-color: #8a8f01;
+}
+
+.cardFeatured {
+  border: 1px solid #6d6e71;
+  border-radius: 0rem;
+}
+/* FEATURED PRODUCTS end */
+
+
+/* Be Healthy start */
+
+.BeHealthyTittle {
+  color: #e8d8b7;
+}
+.bgHealthy1 {
+  background-color: #6d6e71;
+  height: 320px;
+}
+
+.bgHealthy2 {
+  background-color: #e8d8b7;
+  height: 320px;
+}
+
+.BgBeHealthy {}
+
+/* Be Healthy end */
+
+
+
+
+
 
 /* Home style end */
 
