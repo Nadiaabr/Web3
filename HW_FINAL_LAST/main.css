@@ -18,14 +18,19 @@ h1 {
 
 .Hometittle1 {
   background-color: #e8d8b7;
-  height: 100px;
+  height: 150px;
   padding-top: 15px;
 }
 
 .Hometittle2 {
   background-color: #6d6e71;
-  height: 100px;
+  height: 150px;
   padding-top: 15px;
+}
+
+.bgButton {
+  background-color: #8a8f01;
+  border: 5px solid #8a8f01;
 }
 
 /* Carusel style start */
@@ -160,7 +165,13 @@ h1 {
 
 
 
+/* Shop by category start */
 
+.bgCategory {
+  
+}
+
+/* Shop by category end */
 
 
 /* Home style end */
