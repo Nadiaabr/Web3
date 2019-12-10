@@ -1,0 +1,28 @@
+.jumbotron {
+  background-image: url("img/checkout.jpg");
+  background-size: cover;
+  height: 100%;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .jumbotron {
+    background-image: url("img/checkout.jpg");
+    background-size: cover;
+    height: 100%;
+  }
+}
+
+h2 {
+
+  letter-spacing: 5px;
+}
+
+.BgLast {
+  background-color: #8a8f01;
+  
+}
+
+.emailLink1 a{
+  color: black;
+}
