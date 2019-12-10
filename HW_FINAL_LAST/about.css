@@ -1,0 +1,18 @@
+.jumbotron {
+  background-image: url("img/about.jpg");
+  background-size: cover;
+  height: 100%;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .jumbotron {
+    background-image: url("iabout.jpg");
+    background-size: cover;
+    height: 100%;
+  }
+}
+
+h1 {
+  color: #000000;
+}

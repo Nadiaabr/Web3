@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="navbar.css">
   <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="about.css">
 
 
   <title>Final!</title>
@@ -59,11 +60,11 @@
               </a>
             </div>
             <div class="col d-flex align-self-end" id="myDIVRight">
-              <li class="nav-item">
-                <a class="nav-link" href="abaut.html">ABOUT</a>
-              </li>
               <li class="nav-item active">
-                <a class="nav-link" href="contact.html">CONTACT<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="abaut.html">ABOUT<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT</a>
               </li>
             </div>
           </div>
@@ -115,10 +116,10 @@
               <a class="dropdown-item" href="seating.html">Seating</a>
             </div>
           </li>
-          <li class="nav-item mr-5">
-            <a class="nav-link" href="abaut.html">About</a>
+          <li class="nav-item mr-5 active">
+            <a class="nav-link" href="abaut.html">ABOUT<span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="contact.html">CONTACT<span class="sr-only">(current)</span></a>
           </li>
         </ul>
@@ -140,200 +141,90 @@
 
       <!-- jumbotron start-->
       <div class="row jumbotron border-0 rounded-0">
-        <div class="col-12">
-          <h1 class="display-4">CONTACT DESKTEC</h1>
-        </div>
-        <div class="col-10 col-sm-6">
-          <hr class="my-4">
-        </div>
-        <div class="col-10 col-sm-6">
-
-        </div>
-        <div class="col-10 col-sm-6">
-          <p class="lead">We pride ourselves on helping our customers with any questions or problems
-            they may be experiencing.</p>
+        <div class="col-12" style="height: 150px;">
+          <h1 class="display-4">ABOUT DESKTEC</h1>
         </div>
       </div>
       <!-- jumbotron end-->
 
-
-
-      <div class="row d-flex align-items-center">
-        <div class="col-12 col-md-6 Contacttittle1 py-5">
-          <h4 class="card-title text-center text-uppercase">Contact Us by Phone</h4>
-          <p class="card-title text-center text-uppercase ContactP">+1 424 527 11 11 <br> Hours: Mon-Fri, 9am-6pm, ET
-          </p>
-        </div>
-
-        <div class="col-12 col-md-6 Contacttittle2 py-5">
-          <h4 class="card-title text-center text-uppercase">Contact Us by Mail</h4>
-          <p class="card-title text-center text-uppercase ContactP">888 4Th Streer<br> Santa Monica, CA 90403</p>
-        </div>
-      </div>
-      <div class="row Contacttittle3 d-flex align-items-center">
-        <div class="col py-5">
-          <h4 class="card-title text-center text-uppercase BeHealthyTittle">Email Us</h4>
-          <div class="text-center emailLink">
-            <a href="nadia@abramian.net">nadia@abramian.net</a>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="row d-flex align-items-center mt-5 contactForm">
-        <div class="col ml-5">
-          <hr class="">
-        </div>
+      <div class="row Hometittle1 d-flex align-items-center">
         <div class="col">
-          <h4 class="card-title text-center text-uppercase4">CONTACT FORM</h4>
+          <h1 class="card-title text-center text-uppercase">Designed to scale</h1>
         </div>
-        <div class="col mr-5">
-          <hr class="hrContact">
+      </div>
+
+      <div class="row Hometittle1 d-flex align-items-center" style="height: 450px;">
+        <div class="col-12 embed-responsive embed-responsive-16by9 d-md-none">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/_MvxT0LgnB0" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="col-12 d-md-none text-center">
+          <h2>Set the standard for higher education </h2>
+          <p>Desktec roducts are designed to make a significant impact on the educational environment for students,
+            faculty and alumni alike. </p>
         </div>
       </div>
 
 
-      <!-- Form start-->
-      <form class="mt-3 mx-sm-5 contactForm needs-validation" novalidate>
-        <div class="form-row contactForm">
-          <div class="form-group col-12 col-sm-6">
-            <label for="validationCustom01">First Name</label>
-            <input type="text" class="form-control" placeholder="First name" id="validationCustom01" required>
-            <div class="invalid-feedback">
-              Please type your First Name.
-            </div>
-          </div>
-          <div class="form-group col-12 col-sm-6">
-            <label for="validationCustom02">Last Name</label>
-            <input type="text" class="form-control" placeholder="Last name" id="validationCustom02" required>
-            <div class="invalid-feedback">
-              Please type your Last Name.
-            </div>
-          </div>
-          <div class="form-group col-12 col-sm-6">
-            <label for="inputEmail">Email Address</label>
-            <input type="email" class="form-control" id="inputEmail" placeholder="asd@gmail.com" required>
-            <div class="invalid-feedback">
-              Please type your Email Address.
-            </div>
-          </div>
-          <div class="form-group col-12 col-sm-6">
-            <label for="phone">Phone Number</label>
-            <input type="tel" class="form-control" id="phone" placeholder="111-111-1111"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-            <div class="invalid-feedback">
-              Please type your Phone Number.
-            </div>
-          </div>
-          <div class="form-group col-12 col-sm-6">
-            <label for="validationCustom04">Country</label>
-            <select id="validationCustom04" class="custom-select" required>
-              <option selected disabled value="0">Choose...</option>
-              <option>USA</option>
-              <option>RUSSIA</option>
-              <option>CANADA</option>
-            </select>
-            <div class="invalid-feedback">
-              Please choose Country.
-            </div>
-          </div>
-          <div class="form-group col-12 col-sm-6">
-            <label for="ReceiptInvoice">Receipt/Invoice #:</label>
-            <input type="text" class="form-control" id="ReceiptInvoice" placeholder="HGFF-11-11-11" required>
-            <div class="invalid-feedback">
-              Please enter Receipt/Invoice #.
-            </div>
-          </div>
-          <div class="form-group col-12 col-md-6">
-            <label for="reason">Reason for Contact:</label>
-            <select id="reason" class="custom-select" placeholder="Select Option" required>
-              <option selected disabled value="0">Choose...</option>
-              <option>Cancellation of Order</option>
-              <option>Invoice Request</option>
-              <option>Login Issues</option>
-              <option>Order Change TRequest</option>
-              <option>Other</option>
-            </select>
-            <div class="invalid-feedback">
-              Please choose the reason from the list. If you nor shore choose "Other".
-            </div>
-          </div>
-          <div class="form-group col-12">
-            <label for="subject">Subject</label>
-            <textarea class="form-control" id="subject" rows="3" required></textarea>
-            <div class="invalid-feedback">
-              Please type your questions here.
-            </div>
-          </div>
+      <div class="row Hometittle1 d-flex align-items-center" style="height: 450px;">
+        <div class="col embed-responsive embed-responsive-16by9 d-md-none">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/EqfvagE_cqw" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
 
-          <div class="form-group col-12">
-            <label for="comments">Comments</label>
-            <textarea class="form-control" id="comments" rows="3"></textarea>
-          </div>
+      <div class="row Hometittle1 d-flex align-items-center" style="height: 315px;">
+        <div class="col d-none d-md-block">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/_MvxT0LgnB0" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <div class="row contactForm pb-5 mt-4">
-          <div class="col-12 text-center d-none d-sm-block">
-            <button class="btn btn-lg btn-secondary bgButtonSubmit mx-sm-5" href="#" role="button">SUBMIT</button>
-          </div>
-          <div class="col-12 d-flex justify-content-center d-sm-none">
-            <button class="btn btn-block btn-lg btn-secondary bgButtonSubmit mx-sm-5" type="submit" role="button">SUBMIT
-              FORM</button>
-          </div>
+      </div>
+
+      <div class="row Hometittle1 d-flex align-items-center py-5" style="height: 315px;">
+        <div class="col d-none d-md-block">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/EqfvagE_cqw" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-      </form>
+      </div>
+
+
+
+
     </div>
-    <!-- Form end-->
 
 
-    <div class="container-fluid">
 
-      <div class="row">
 
-        <div class="col-12 col-md-6 col-xl-3 text-center d-flex align-items-center bgSubscribe2 px-sm-5 px-lg-2 order-1">
-          <div class="card-body mt-2 mb-2 contacttittle1 text-uppercase">
-            <h1 class="card-title text-uppercase mb-4">Subscribe</h1>
-            <p class="card-text cardTextHome">Join our newsletter for EXCLUSIVE deals & creative inspiration.</p>
-            <p class="card-text cardTextHome">Get 10% off your next order when signing up!</p>
-          </div>
-        </div>
 
-        <div class="form contact-form needs-validation col-12 col-md-6 col-xl-3 bgSubscribe justify-content-center d-flex 
-        align-items-center order-2" novalidate>
-          <div class="row w-100 px-5">
-            <div class="col-12 my-4">
-              <input type="email" class="form-control formEmail text-center" id="inputEmail" placeholder="asd@gmail.com" required>
-              <div class="invalid-feedback">
-                Please type your Email Address.
-              </div>
-            </div>
-            <div class="col-12 my-4">
-              <button class="btn btn-lg btn-block btn-secondary bgButtonSubmit2 border-0" role="button"
-                type="submit">SUBMIT</button>
-            </div>
-          </div>
-        </div>
 
-        <div class="col-12 col-md-6 col-xl-3 text-center d-flex align-items-center px-sm-5 px-lg-2 order-3 order-md-4 order-xl-3">
-          <div class="card-body mt-2 mb-2 contacttittle1 text-uppercase">
-            <h1 class="card-title text-uppercase mb-4">My Account</h1>
-            <p class="card-text cardTextHome">Create an account and get the following exclusive benefits: </p>
-            <p class="card-text cardTextHome">Earn 3% Back on your orders</p>
-          </div>
-        </div>
 
-        <div class="col-12 col-md-6 col-xl-3 bgMyAccount justify-content-center d-flex align-items-center order-4 order-md-3 order-xl-4">
-          <div class="row w-100 px-5">
-            <div class="col-12 my-4">
-              <a class="btn btn-lg btn-block btn-secondary bgButtonSubmit border-0" href="#" role="button">JOIN NOW</a>
-            </div>
-            <div class="col-12 my-4">
-              <a class="btn btn-lg btn-block btn-secondary bgButtonSubmit border-0" href="#" role="button">LOG IN</a>
-            </div>
-          </div>
-        </div>
 
+
+
+
+    <div class="row d-flex align-items-center">
+      <div class="col-12 col-md-6 Contacttittle1 py-5">
+        <h4 class="card-title text-center text-uppercase">Contact Us by Phone</h4>
+        <p class="card-title text-center text-uppercase ContactP">+1 424 527 11 11 <br> Hours: Mon-Fri, 9am-6pm, ET
+        </p>
+      </div>
+
+      <div class="col-12 col-md-6 Contacttittle2 py-5">
+        <h4 class="card-title text-center text-uppercase">Contact Us by Mail</h4>
+        <p class="card-title text-center text-uppercase ContactP">888 4Th Streer<br> Santa Monica, CA 90403</p>
       </div>
     </div>
+
+
+
+
+
+
+
+
+
+
 
   </main>
 
