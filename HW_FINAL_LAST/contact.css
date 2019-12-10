@@ -2,12 +2,23 @@
 
 .bgSubscribe {
   background-color: #6d6e71;
-  height: 340px;
+  height: 350px;
+}
+
+.bgSubscribe2 {
+  background-color: #e8d8b7;
+  height: 350px;
 }
 
 .bgMyAccount {
-  background-color: #e8d8b7;
-  height: 340px;
+  background-color: #8a8f01;
+  height: 350px;
+}
+
+@media (min-width: 1200px) {
+  .bgMyAccount {
+    background-color: #e8d8b7;
+  }
 }
 
 .contactContainer {
@@ -89,4 +100,16 @@ hr {
   margin-left: 250px;
   margin-right: 250px;
   }
+}
+
+.formEmail {
+  height: 45px;
+}
+
+.invalid-feedback {
+  color: rgb(112, 32, 12);
+}
+
+.form-control.is-invalid, .was-validated .form-control:invalid {
+  border-color: rgb(112, 32, 12);
 }
