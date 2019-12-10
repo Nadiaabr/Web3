@@ -30,10 +30,39 @@ div {
   background-color: #898e00;
 }
 
-.cartButton a{
-  font-size: 30px;
+@keyframes cartButton-item-add-anim {
+  0% {font-size: 35px;}
+  50% {font-size: 38px;}
+  100% {font-size: 35px;}
+}
+
+.cartButton a {
+  font-size: 35px;
   color: #e8d8b7;
-  margin-bottom: 4px;
+}
+
+.cartButton-item-add-anim a {
+  animation: cartButton-item-add-anim 1s forwards;
+}
+
+@keyframes cart-item-count-add-anim {
+  0% {font-size: 16px; margin-top: 10px;margin-left:-32px;}
+  50% {font-size: 19px; margin-top: 9px;margin-left:-33.5px;}
+  100% {font-size: 16px; margin-top: 10px;margin-left:-32px;}
+}
+
+.cart-item-count {
+  font-size: 16px;
+  font-weight: bold;
+  width:30px;
+  margin-left:-32px;
+  margin-top:10px;
+  pointer-events:none;
+  color: #4e4e4e;
+}
+
+.cart-item-count-add-anim {
+  animation: cart-item-count-add-anim 1s forwards;
 }
 
 .cartButtonMobile a{
@@ -143,4 +172,5 @@ div {
 
   .test3 {
     background-color: blue;
+    opacity: 0.5;
   }

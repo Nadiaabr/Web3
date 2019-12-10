@@ -66,6 +66,54 @@ $(document).ready(function() {
       $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
     }
   });  
+
+  $('.bgButton').click(function(e) {
+    e.preventDefault();
+    var cartItemCount = document.getElementById('cartItemCount');
+    var cartButton = document.getElementById('cartButton');
+    var cartItemCountMobile = document.getElementById('cartItemCountMobile');
+    var cartButtonMobile = document.getElementById('cartButtonMobile');
+
+    if (cartItemCount != null) {
+      cartItemCount.classList.remove('cart-item-count-add-anim');
+      cartItemCount.offsetWidth = cartItemCount.offsetWidth;
+    }
+    if (cartButton != null) {
+      cartButton.classList.remove('cartButton-item-add-anim');
+      cartButton.offsetWidth = cartButton.offsetWidth;
+    }
+    if (cartItemCountMobile != null) {
+      cartItemCountMobile.classList.remove('cart-item-count-add-anim');
+      cartItemCountMobile.offsetWidth = cartItemCountMobile.offsetWidth;
+    }
+    if (cartButtonMobile != null) {
+      cartButtonMobile.classList.remove('cartButton-item-add-anim');
+      cartButtonMobile.offsetWidth = cartButtonMobile.offsetWidth;
+    }
+
+    if (cartItemCount != null)
+      cartItemCount.classList.add('cart-item-count-add-anim');
+    if (cartButton != null)
+      cartButton.classList.add('cartButton-item-add-anim');
+    if (cartItemCountMobile != null)
+      cartItemCountMobile.classList.add('cart-item-count-add-anim');
+    if (cartButtonMobile != null)
+      cartButtonMobile.classList.add('cartButton-item-add-anim');
+
+    if (cartItemCount != null) {
+      if (cartItemCount.textContent == '')
+        cartItemCount.textContent = '1';
+      else
+        cartItemCount.textContent = (parseInt(cartItemCount.textContent) + 1).toString();
+    }
+    if (cartItemCountMobile != null) {
+      if (cartItemCountMobile.textContent == '')
+        cartItemCountMobile.textContent = '1';
+      else
+        cartItemCountMobile.textContent = (parseInt(cartItemCountMobile.textContent) + 1).toString();
+    }
+    return false;
+  });
 });
 
 

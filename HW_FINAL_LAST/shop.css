@@ -10,7 +10,24 @@
   background-color: #6d6e71;
 }
 
+.price {
+  font-size: 20px;
+  font-weight: bold; 
+}
 
-.sideMenu {
- height: ;
+
+@media (min-width: 992px) {
+  .pBody {
+    font-size: 18px;
+    line-height: 35px;
+  }
+}
+
+hr {
+  border-top: 3px solid #6e6e6e;
+}
+
+
+.shopCategTittle {
+  letter-spacing: 2px;
 }

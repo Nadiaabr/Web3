@@ -68,10 +68,11 @@
               </li>
             </div>
           </div>
-          <div class="col-1 d-flex cartButton align-self-end">
+          <div id='cartButton' class="col-1 d-flex cartButton align-self-end">
             <a href="#">
               <i class="fas fa-shopping-cart"></i>
             </a>
+            <div id="cartItemCount" class="cart-item-count text-center"></div>
           </div>
         </div>
       </div>
@@ -96,10 +97,11 @@
           <img src="img/logo.png" alt="" width="150">
         </a>
       </div>
-      <div class="col d-flex justify-content-end cartButtonMobile">
+      <div id='cartButtonMobile' class="col d-flex justify-content-end cartButtonMobile">
         <a href="#">
           <i class="fas fa-shopping-cart"></i>
         </a>
+        <div id="cartItemCountMobile" class="cart-item-count text-center"></div>
       </div>
       <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent23">
         <ul class="navbar-nav">
@@ -149,23 +151,29 @@
         <div class="row mb-5">
           <div id="bestsellerCarousel" class="carousel slide w-100" data-ride="carousel">
             <div class="carousel-inner bestseller-carousel-inner" role="listbox" id="carouselBestseller">
-              <div class="carousel-item my-carousel-item active">
+              <div class="carousel-item my-carousel-item active position-relative">
                 <img class="d-block col-6 col-md-4 img-fluid" src="img/BestsellerCarousel1.jpg">
+                <a href="productInfo.html" class="stretched-link"></a>
               </div>
-              <div class="carousel-item my-carousel-item">
+              <div class="carousel-item my-carousel-item position-relative">
                 <img class="d-block col-6 col-md-4 img-fluid" src="img/BestsellerCarousel5.jpg">
+                <a href="productInfo.html" class="stretched-link"></a>
               </div>
-              <div class="carousel-item my-carousel-item">
+              <div class="carousel-item my-carousel-item position-relative">
                 <img class="d-block col-6 col-md-4  img-fluid" src="img/BestsellerCarousel3.jpg">
+                <a href="productInfo.html" class="stretched-link"></a>
               </div>
-              <div class="carousel-item my-carousel-item">
+              <div class="carousel-item my-carousel-item position-relative">
                 <img class="d-block col-6 col-md-4  img-fluid" src="img/BestsellerCarousel4.jpg">
+                <a href="productInfo.html" class="stretched-link"></a>
               </div>
-              <div class="carousel-item my-carousel-item">
+              <div class="carousel-item my-carousel-item position-relative">
                 <img class="d-block col-6 col-md-4  img-fluid" src="img/BestsellerCarousel2.jpg">
+                <a href="productInfo.html" class="stretched-link"></a>
               </div>
-              <div class="carousel-item my-carousel-item">
+              <div class="carousel-item my-carousel-item position-relative">
                 <img class="d-block col-6 col-md-4  img-fluid" src="img/BestsellerCarousel6.jpg">
+                <a href="productInfo.html" class="stretched-link"></a>
               </div>
             </div>
             <div class="">
@@ -184,26 +192,21 @@
 
 
       <div class="row bgDeskConverters2">
-
-        <div class="col-12 col-lg-3 col-xl-2">
-          <div class="row bgDeskConverters sideMenu py-5">
+        <div class="col-12 col-lg-3 col-xl-2 d-none d-lg-block">
+          <div class="row bgDeskConverters sideMenu py-5 position-relative">
             <div class="col">
-              <h1 class="card-title text-left text-uppercase">Full Desks</h1>
+              <h1 class="shopCategTittle card-title text-left text-uppercase my-4">Full Desks</h1>
+            </div>
+            <div class="col-md-6 position-static p-4 pl-md-0">
+              <a href="fullDesks.html" class="stretched-link"></a>
             </div>
           </div>
-          <div class="row bgDeskConverters3 sideMenu py-5">
+          <div class="row bgDeskConverters3 sideMenu py-5 position-relative">
             <div class="col">
-              <h1 class="card-title text-left text-uppercase">Seating and Storage</h1>
+              <h1 class="shopCategTittle card-title text-left text-uppercase">Seating and Storage</h1>
             </div>
-          </div>
-          <div class="row bgDeskConverters sideMenu py-5">
-              <div class="col">
-                <h1 class="card-title text-left text-uppercase">NEW PRODUCT</h1>
-              </div>
-            </div>
-          <div class="row bgDeskConverters2 py-5 emptyRow">
-            <div class="col">
-              
+            <div class="col-md-6 position-static p-4 pl-md-0">
+              <a href="seatingAndStorage.html" class="stretched-link"></a>
             </div>
           </div>
         </div>
@@ -211,11 +214,23 @@
 
         <!-- FEATURED PRODUCTS start-->
         <div class="col mainContantShop">
+          <div class="row d-lg-none pb-4">
+            <div class="col bgDeskConverters d-flex justify-content-center pb-2 position-relative">
+              <h1 class="card-title text-center text-uppercase mt-4">Full Desks</h1>
+              <a href="fullDesks.html" class="stretched-link"></a>
+            </div>
+            <div class="col bgDeskConverters3 d-flex justify-content-center pb-2 position-relative">
+              <h1 class="card-title text-center text-uppercase mt-4">Seating and Storage</h1>
+              <a href="seatingAndStorage.html" class="stretched-link"></a>
+            </div>
+          </div>
 
           <div class="row d-flex align-items-center bgDeskConverters2 py-5">
             <div class="col  mx-md-5 col-lg-8 ml-xl-5 mx-sm-3">
-              <h1 class="card-title text-left text-uppercase">Desk Converters</h1>
-              <p class="card-text mt-4">FOR YOUR DESKTOP. We believe work should be comfortable, productive and
+              <h1 class="card-title text-left text-uppercase mt-4">Desk Converters</h1>
+              <p class="card-text mt-5 mb-2 mb-md-4 pBody">FOR YOUR DESKTOP. We believe work should be comfortable,
+                productive
+                and
                 energizing.
                 That’s why we designed the Exec series adjustable standing desk converters for anyone ready to take
                 their
@@ -230,228 +245,131 @@
             </div>
           </div>
 
-          <div class="row bgDeskConverters2 px-xl-5 pb-5 px-md-3 px-sm-3 px-md-5">
+          <div class="row bgDeskConverters2 text-center px-xl-5 pb-5 px-md-3 px-sm-3 px-md-5">
 
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-              <div class="card cardFeatured">
-                <div class="">
-                  <img src="img/desk_Carusel2.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">AirRise™ Pro Standing Desk Converter</h5>
-                  <p class="card-text">Two-tier design: upper display surface, lower keyboard/mouse deck Heavy, weighted
-                    base
-                    for stability.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">$900</li>
-                  <li class="list-group-item">Free shipping</li>
-                </ul>
-                <div class="col">
-                  <div class="row">
-                    <div class="col-12">
-                      <a class="btn btn-block btn-secondary bgButton my-2" href="javascript:void(0);" role="button">ADD
-                        TO CART</a>
-                    </div>
-                  </div>
-                </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex justify-content-between flex-column">
+              <div class="position-relative">
+                <img src="img/deskConverters2.png" class="card-img-top mb-4" alt="...">
+                <h5 class="card-title">Cube Plus® 40</h5>
+                <p class="card-text">Shorter depth fits cubicles and narrow desks. 2-tier model, fits up to 2 monitors.
+                </p>
+                <p class="card-text price">$300</p>
+                <p class="card-text">Free shipping</p>
+                <a href="productInfo.html" class="stretched-link"></a>
               </div>
+              <p>
+                <a class="btn btn-block btn-secondary bgButton my-2" href="javascript:void(0);" role="button">ADD TO
+                  CART</a>
+              </p>
+
             </div>
 
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-4 mt-sm-0">
-              <div class="card cardFeatured">
-                <div class="">
-                  <img src="img/desk_Carusel2.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">AirRise™ Pro Standing Desk Converter</h5>
-                  <p class="card-text">Two-tier design: upper display surface, lower keyboard/mouse deck Heavy, weighted
-                    base
-                    for stability.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">$900</li>
-                  <li class="list-group-item">Free shipping</li>
-                </ul>
-                <div class="col">
-                  <div class="row">
-                    <div class="col-12">
-                      <a class="btn btn-block btn-secondary bgButton my-2" href="javascript:void(0);" role="button">ADD
-                        TO CART</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="col-12 d-sm-none">
+              <hr class="my-4">
             </div>
 
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-4 mt-lg-0">
-              <div class="card cardFeatured">
-                <div class="">
-                  <img src="img/desk_Carusel2.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">AirRise™ Pro Standing Desk Converter</h5>
-                  <p class="card-text">Two-tier design: upper display surface, lower keyboard/mouse deck Heavy, weighted
-                    base
-                    for stability.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">$900</li>
-                  <li class="list-group-item">Free shipping</li>
-                </ul>
-                <div class="col">
-                  <div class="row">
-                    <div class="col-12">
-                      <a class="btn btn-block btn-secondary bgButton my-2" href="javascript:void(0);" role="button">ADD
-                        TO CART</a>
-                    </div>
-                  </div>
-                </div>
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex justify-content-between flex-column">
+              <div class="position-relative">
+                <img src="img/deskConverters9.png" class="card-img-top mb-4" alt="...">
+                <h5 class="card-title">ProPlus™ 32 Electric</h5>
+                <p class="card-text">Adaptability at the touch of a button. Smaller footprint for tight spaces</p>
+                <p class="card-text price">$300</p>
+                <p class="card-text">Free shipping</p>
+                <a href="productInfo.html" class="stretched-link"></a>
               </div>
+              <p>
+                <a class="btn btn-block btn-secondary bgButton my-2" href="javascript:void(0);" role="button">ADD TO
+                  CART</a>
+              </p>
             </div>
 
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-4 mt-xl-0">
-              <div class="card cardFeatured">
-                <div class="">
-                  <img src="img/desk_Carusel2.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">AirRise™ Pro Standing Desk Converter</h5>
-                  <p class="card-text">Two-tier design: upper display surface, lower keyboard/mouse deck Heavy, weighted
-                    base
-                    for stability.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">$900</li>
-                  <li class="list-group-item">Free shipping</li>
-                </ul>
-                <div class="col">
-                  <div class="row">
-                    <div class="col-12">
-                      <a class="btn btn-block btn-secondary bgButton my-2" href="javascript:void(0);" role="button">ADD
-                        TO CART</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="col-12 d-lg-none">
+              <hr class="my-4">
             </div>
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-4">
-              <div class="card cardFeatured">
-                <div class="">
-                  <img src="img/desk_Carusel2.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">AirRise™ Pro Standing Desk Converter</h5>
-                  <p class="card-text">Two-tier design: upper display surface, lower keyboard/mouse deck Heavy, weighted
-                    base
-                    for stability.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">$900</li>
-                  <li class="list-group-item">Free shipping</li>
-                </ul>
-                <div class="col">
-                  <div class="row">
-                    <div class="col-12">
-                      <a class="btn btn-block btn-secondary bgButton my-2" href="javascript:void(0);" role="button">ADD
-                        TO CART</a>
-                    </div>
-                  </div>
-                </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex justify-content-between flex-column">
+              <div class="position-relative">
+                <img src="img/deskConverters4.png" class="card-img-top mb-4" alt="...">
+                <h5 class="card-title">ProPlus™ 36</h5>
+                <p class="card-text">Ur most popular VARIDESK model!2-tier standing desk converter, fits up to 2 screens
+                </p>
+                <p class="card-text price">$400</p>
+                <p class="card-text">Free shipping</p>
+                <a href="productInfo.html" class="stretched-link"></a>
               </div>
+              <p>
+                <a class="btn btn-block btn-secondary bgButton my-2" href="javascript:void(0);" role="button">ADD TO
+                  CART</a>
+              </p>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-4">
-              <div class="card cardFeatured">
-                <div class="">
-                  <img src="img/desk_Carusel2.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">AirRise™ Pro Standing Desk Converter</h5>
-                  <p class="card-text">Two-tier design: upper display surface, lower keyboard/mouse deck Heavy, weighted
-                    base
-                    for stability.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">$900</li>
-                  <li class="list-group-item">Free shipping</li>
-                </ul>
-                <div class="col">
-                  <div class="row">
-                    <div class="col-12">
-                      <a class="btn btn-block btn-secondary bgButton my-2" href="javascript:void(0);" role="button">ADD
-                        TO CART</a>
-                    </div>
-                  </div>
-                </div>
+
+            <div class="col-12 d-sm-none d-lg-block d-xl-none">
+              <hr class="my-4">
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex justify-content-between flex-column">
+              <div class="position-relative">
+                <img src="img/deskConverters1.png" class="card-img-top mb-4" alt="...">
+                <h5 class="card-title">CUBE CORNER® 36</h5>
+                <p class="card-text">For corner-facing setups. 2-tier model, fits up to 2 monitors.</p>
+                <p class="card-text price">$450</p>
+                <p class="card-text">Free shipping</p>
+                <a href="productInfo.html" class="stretched-link"></a>
               </div>
+              <p>
+                <a class="btn btn-block btn-secondary bgButton my-2" href="javascript:void(0);" role="button">ADD TO
+                  CART</a>
+              </p>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-4">
-              <div class="card cardFeatured">
-                <div class="">
-                  <img src="img/desk_Carusel2.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">AirRise™ Pro Standing Desk Converter</h5>
-                  <p class="card-text">Two-tier design: upper display surface, lower keyboard/mouse deck Heavy, weighted
-                    base
-                    for stability.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">$900</li>
-                  <li class="list-group-item">Free shipping</li>
-                </ul>
-                <div class="col">
-                  <div class="row">
-                    <div class="col-12">
-                      <a class="btn btn-block btn-secondary bgButton my-2" href="javascript:void(0);" role="button">ADD
-                        TO CART</a>
-                    </div>
-                  </div>
-                </div>
+
+            <div class="col-12 d-lg-none d-xl-block">
+              <hr class="my-4">
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex justify-content-between flex-column">
+              <div class="position-relative">
+                <img src="img/deskConverters4.png" class="card-img-top mb-4" alt="...">
+                <h5 class="card-title">CExec 40™</h5>
+                <p class="card-text">Raises up to 19¼" high to accommodate taller users. 2-tier desk riser, fits up to 2
+                  monitors</p>
+                <p class="card-text price">$550</p>
+                <p class="card-text">Free shipping</p>
+                <a href="productInfo.html" class="stretched-link"></a>
               </div>
+              <p>
+                <a class="btn btn-block btn-secondary bgButton my-2" href="javascript:void(0);" role="button">ADD TO
+                  CART</a>
+              </p>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-4">
-              <div class="card cardFeatured">
-                <div class="">
-                  <img src="img/desk_Carusel2.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">AirRise™ Pro Standing Desk Converter</h5>
-                  <p class="card-text">Two-tier design: upper display surface, lower keyboard/mouse deck Heavy, weighted
-                    base
-                    for stability.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">$900</li>
-                  <li class="list-group-item">Free shipping</li>
-                </ul>
-                <div class="col">
-                  <div class="row">
-                    <div class="col-12">
-                      <a class="btn btn-block btn-secondary bgButton my-2" href="javascript:void(0);" role="button">ADD
-                        TO CART</a>
-                    </div>
-                  </div>
-                </div>
+
+            <div class="col-12 d-sm-none">
+              <hr class="my-4">
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex justify-content-between flex-column">
+              <div class="position-relative">
+                <img src="img/deskConverters1.png" class="card-img-top mb-4" alt="...">
+                <h5 class="card-title">Laptop 30™</h5>
+                <p class="card-text">For laptops and smaller workspaces. Compact, lightweight design.For
+                  laptops and smaller workspaces. Compact, lightweight design</p>
+                <p class="card-text price">$350</p>
+                <p class="card-text">Free shipping</p>
+                <a href="productInfo.html" class="stretched-link"></a>
               </div>
+              <p>
+                <a class="btn btn-block btn-secondary bgButton my-2" href="javascript:void(0);" role="button">ADD TO
+                  CART</a>
+              </p>
             </div>
+
+
+
 
           </div>
         </div>
       </div>
-
-
-
-
-
-
-
-
-      <!-- FEATURED PRODUCTS end-->
-
-
-
-
+    </div>
 
   </main>
 

@@ -19,7 +19,7 @@ color: whitesmoke;
 }
 
 p {
-  line-height: 1.8rem;
+  line-height: 1.9rem;
 }
 
 /* Home style start */
@@ -157,12 +157,12 @@ p {
 @media (min-width: 1200px) {
   .bgHealthy1 {
   background-color: #6d6e71;
-  height: 370px;
+  height: 380px;
 }
 
 .bgHealthy2 {
   background-color: #e8d8b7;
-  height: 370px;
+  height: 380px;
 }
 }
 

@@ -66,12 +66,11 @@
               </li>
             </div>
           </div>
-          <div class="col-1 d-flex cartButton align-self-end test">
-            <div>
-              <a href="#">
-                <i class="fas fa-shopping-cart" style="position: absolute;"></i>
-              </a>
-            </div>
+          <div id="cartButton" class="col-1 d-flex cartButton align-self-end">
+            <a href="#">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+            <div id="cartItemCount" class="cart-item-count text-center"></div>
           </div>
         </div>
       </div>
@@ -96,10 +95,11 @@
           <img src="img/logo.png" alt="" width="150">
         </a>
       </div>
-      <div class="col d-flex justify-content-end cartButtonMobile">
+      <div id="cartButtonMobile" class="col d-flex justify-content-end cartButtonMobile">
         <a href="#">
           <i class="fas fa-shopping-cart"></i>
         </a>
+        <div id="cartItemCountMobile" class="cart-item-count text-center"></div>
       </div>
       <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent23">
         <ul class="navbar-nav">
@@ -189,23 +189,29 @@
         <div class="row my-5">
           <div id="bestsellerCarousel" class="carousel slide w-100" data-ride="carousel">
             <div class="carousel-inner bestseller-carousel-inner" role="listbox" id="carouselBestseller">
-              <div class="carousel-item my-carousel-item active">
+              <div class="carousel-item my-carousel-item active position-relative">
                 <img class="d-block col-6 col-md-4 img-fluid" src="img/BestsellerCarousel1.jpg">
+                <a href="productInfo.html" class="stretched-link"></a>
               </div>
-              <div class="carousel-item my-carousel-item">
+              <div class="carousel-item my-carousel-item position-relative">
                 <img class="d-block col-6 col-md-4 img-fluid" src="img/BestsellerCarousel5.jpg">
+                <a href="productInfo.html" class="stretched-link"></a>
               </div>
-              <div class="carousel-item my-carousel-item">
+              <div class="carousel-item my-carousel-item position-relative">
                 <img class="d-block col-6 col-md-4  img-fluid" src="img/BestsellerCarousel3.jpg">
+                <a href="productInfo.html" class="stretched-link"></a>
               </div>
-              <div class="carousel-item my-carousel-item">
+              <div class="carousel-item my-carousel-item position-relative">
                 <img class="d-block col-6 col-md-4  img-fluid" src="img/BestsellerCarousel4.jpg">
+                <a href="productInfo.html" class="stretched-link"></a>
               </div>
-              <div class="carousel-item my-carousel-item">
+              <div class="carousel-item my-carousel-item position-relative">
                 <img class="d-block col-6 col-md-4  img-fluid" src="img/BestsellerCarousel2.jpg">
+                <a href="productInfo.html" class="stretched-link"></a>
               </div>
-              <div class="carousel-item my-carousel-item">
+              <div class="carousel-item my-carousel-item position-relative">
                 <img class="d-block col-6 col-md-4  img-fluid" src="img/BestsellerCarousel6.jpg">
+                <a href="productInfo.html" class="stretched-link"></a>
               </div>
             </div>
             <div class="">
