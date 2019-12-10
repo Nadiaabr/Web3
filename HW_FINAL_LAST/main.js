@@ -1,7 +1,7 @@
 function updateHeaderLogo() {
   var logoWidth = 150; // in pixels
   var marginX = logoWidth / 2 + 15; // +margin
-  var marginY = 60; // Initial margin for logo
+  var marginY = 40; // Initial margin for logo
   var easeFactor = 2;
   var myDIVLeft = document.getElementById('myDIVLeft');
   var myDIVRight = document.getElementById('myDIVRight');
@@ -65,8 +65,10 @@ $(document).ready(function() {
     else {
       $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
     }
-});  
+  });  
 });
+
+
 
 
 

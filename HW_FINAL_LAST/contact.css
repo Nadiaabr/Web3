@@ -1,0 +1,94 @@
+.SubscribeTittle1 {
+  
+}
+
+.bgSubscribe {
+  background-color: #6d6e71;
+  height: 340px;
+}
+
+.bgMyAccount {
+  background-color: #e8d8b7;
+  height: 340px;
+}
+
+.contactContainer {
+  background-color: #8a8f01;
+}
+
+.jumbotron {
+  background-image: url("img/contactus.jpg");
+  background-size: cover;
+  height: 100%;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .jumbotron {
+    background-image: url("img/contactSmall.png");
+    background-size: cover;
+    height: 100%;
+  }
+}
+
+.lead {
+  line-height: 2rem;
+}
+
+.Contacttittle1 {
+  background-color: #e8d8b7;
+}
+
+.Contacttittle2 {
+  background-color: #6d6e71;
+}
+
+.Contacttittle3 {
+  background-color: rgb(0, 0, 0); 
+}
+
+.Contacttittle4 {
+  background-color: rgb(0, 0, 0); 
+}
+
+.emailLink a {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.ContactP {
+  margin-bottom: 0;
+}
+
+.bgButtonSubmit {
+  background-color: #6d6e71;
+}
+
+.bgButtonSubmit2 {
+  background-color: #8a8f01;
+}
+
+hr {
+  border-top: 3px solid #e8d8b7;
+}
+
+@media (min-width: 768px){
+  .contactForm {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+} 
+
+@media (min-width: 992px){
+  .contactForm {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+}
+
+@media (min-width: 1200px){
+.contactForm {
+  margin-left: 250px;
+  margin-right: 250px;
+  }
+}

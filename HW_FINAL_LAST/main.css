@@ -14,7 +14,7 @@ h1 {
   letter-spacing: 5px;
 }
 
-h5 {
+h6 {
 color: whitesmoke;
 }
 
@@ -39,6 +39,11 @@ p {
 .bgButton {
   background-color: #8a8f01;
   border: 5px solid #8a8f01;
+}
+
+.bgButtonDetails {
+  background-color: #6d6e71;
+  border: 5px solid #6d6e71;
 }
 
 /* Carusel style start */
@@ -113,41 +118,23 @@ p {
 }
 }
 
-@media (min-width: 992px){
-  .carousel-inner .carousel-item.active,
-  .carousel-inner .carousel-item-next,
-  .carousel-inner .carousel-item-prev {
-    display: flex;
-  }
-  
-  .carousel-inner .carousel-item-right.active,
-  .carousel-inner .carousel-item-next {
-    transform: translateX(16%);
-  }
-  
-  .carousel-inner .carousel-item-left.active, 
-  .carousel-inner .carousel-item-prev {
-    transform: translateX(-16%);
-  }
-    
-  .carousel-inner .carousel-item-right,
-  .carousel-inner .carousel-item-left{ 
-    transform: translateX(0);
-    
-  }
+.bestseller-carousel-inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
+
 /* CarouselBestseller style end */
 
 
 
 /* FEATURED PRODUCTS start */
 .bgFeatured {
-  background-color: #8a8f01;
+  background-color: #e8d8b7;
 }
 
-.cardFeatured {
-  border: 1px solid #6d6e71;
-  border-radius: 0rem;
+.addCArdButton {
+  padding-left: 0;
 }
 /* FEATURED PRODUCTS end */
 
@@ -167,7 +154,17 @@ p {
   height: 320px;
 }
 
-.BgBeHealthy {}
+@media (min-width: 1200px) {
+  .bgHealthy1 {
+  background-color: #6d6e71;
+  height: 370px;
+}
+
+.bgHealthy2 {
+  background-color: #e8d8b7;
+  height: 370px;
+}
+}
 
 /* Be Healthy end */
 
@@ -176,7 +173,7 @@ p {
 /* Shop by category start */
 
 .bgCategory {
-  
+  background-color: #8a8f01;
 }
 
 /* Shop by category end */
@@ -205,29 +202,3 @@ p {
 
 /* Footer style ended */
 
-
-
-
-
-
-
-
-
-  
-}
-
-@media (max-width: 767px){
-  
-}
-
-@media (min-width: 540px) and (max-width: 767px){
-  
-}
-
-@media (min-width: 768px){
-  
-}
-
-@media (min-width: 992px){
-
-}

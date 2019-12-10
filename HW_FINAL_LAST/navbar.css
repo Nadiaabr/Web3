@@ -23,14 +23,20 @@ div {
 }
 
 .header-shadow {
-  box-shadow: -1px 9px 13px 1px rgba(0,0,0,0.38);
+  box-shadow: -1px 9px 13px 1px rgba(14, 10, 10, 0.38);
 }
 
 .logoHeader {
   background-color: #898e00;
 }
 
-.cartButton {
+.cartButton a{
+  font-size: 30px;
+  color: #e8d8b7;
+  margin-bottom: 4px;
+}
+
+.cartButtonMobile a{
   font-size: 30px;
   color: #e8d8b7;
 }
@@ -39,6 +45,9 @@ div {
   height: 65px;
 }
 
+#myDIVTop {
+  margin-top: 10px;
+}
 
 /* Navbar style end */
 
@@ -118,5 +127,20 @@ div {
   left: 50%;
   }
 
+  .nav-link {
+    margin-bottom: -9px;
+  }
+
   /* Toggler button animation end */
 
+  .test {
+    background-color: red;
+  }
+  
+  .test2 {
+    background-color: green;
+  }
+
+  .test3 {
+    background-color: blue;
+  }
